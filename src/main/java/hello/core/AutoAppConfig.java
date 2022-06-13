@@ -14,8 +14,9 @@ import hello.core.member.MemoryMemberRepository;
 	excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
 public class AutoAppConfig {
+	/* 충돌 테스트를 위한 코드
 	@Bean(name = "memoryMemberRepository")
 	MemberRepository memberRepository() {
 		return new MemoryMemberRepository();
-	}
+	}*/
 }
